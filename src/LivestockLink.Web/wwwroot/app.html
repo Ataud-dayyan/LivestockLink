@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LivestockLink Portal — Nigerian B2B Livestock Brokerage</title>
+  <!-- Security: referrer policy enforced at meta level as defence-in-depth -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Inter font self-hosted in /fonts/ — no external CDN dependency -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/app.html" class="brand-logo">
+        <div class="logo-icon">LL</div>
+        <span>LivestockLink</span>
+        <span class="brand-badge" id="portal-role-badge">Portal</span>
+      </a>
+
+      <div class="nav-links">
+        <!-- Quick Switcher for Demonstrators -->
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 0.75rem; color: var(--slate-500); font-weight: 600;">DEMO SWITCH:</span>
+          <select id="demo-role-switcher" class="filter-select" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;" onchange="switchDemoAccount(this.value)">
+            <option value="">-- Switch Account --</option>
+            <option value="mamacass@livestocklink.ng">Restaurant: Mama Cass (Lagos)</option>
+            <option value="calabarkitchen@livestocklink.ng">Restaurant: Calabar Kitchen (Abuja)</option>
+            <option value="albarakah@livestocklink.ng">Supplier: Al-Barakah Poultry</option>
+            <option value="nigervalley@livestocklink.ng">Supplier: Niger Valley Catfish</option>
+            <option value="plateauprime@livestocklink.ng">Supplier: Plateau Prime Beef</option>
+            <option value="admin@livestocklink.ng">Admin: Platform Owner</option>
+          </select>
+        </div>
+
+        <a href="/swagger" target="_blank" class="nav-link" style="font-size: 0.85rem;">Swagger API</a>
+        <button class="btn btn-secondary btn-sm" onclick="API.logout()">Log Out</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- App Body Layout -->
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <div class="sidebar-user-name" id="user-display-name">Loading User...</div>
+        <div class="sidebar-user-role" id="user-display-role">Role</div>
+        <div style="font-size: 0.75rem; color: var(--slate-500); margin-top: 0.2rem;" id="user-display-profile">Profile</div>
+      </div>
+
+      <nav class="sidebar-nav" id="sidebar-nav-items">
+        <!-- Injected dynamically based on role -->
+      </nav>
+
+      <div style="padding-top: 1rem; border-top: 1px solid var(--slate-200); font-size: 0.75rem; color: var(--slate-400);">
+        LivestockLink Nigeria v1.0<br>
+        All monetary values in <strong>NGN (₦)</strong>
+      </div>
+    </aside>
+
+    <!-- Main Dynamic Content Area -->
+    <main class="main-content" id="main-content">
+      <div style="text-align: center; padding: 4rem;">
+        <div style="font-size: 1.5rem; font-weight: 600; color: var(--slate-600);">Loading portal...</div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Universal Modal Container -->
+  <div class="modal-overlay" id="app-modal">
+    <div class="modal-card" id="app-modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="app-modal-title">Modal Title</h3>
+        <button class="modal-close" onclick="closeAppModal()">&times;</button>
+      </div>
+      <div id="app-modal-body">
+        <!-- Injected modal content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Client Scripts -->
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

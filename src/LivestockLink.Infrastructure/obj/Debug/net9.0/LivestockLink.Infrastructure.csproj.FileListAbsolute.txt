@@ -1,0 +1,17 @@
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Infrastructure.deps.json
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Infrastructure.runtimeconfig.json
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Infrastructure.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Infrastructure.pdb
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Core.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\bin\Debug\net9.0\LivestockLink.Core.pdb
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.AssemblyInfo.cs
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\Livestoc.DF57B9D0.Up2Date
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\refint\LivestockLink.Infrastructure.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.pdb
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\LivestockLink.Infrastructure.genruntimeconfig.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Infrastructure\obj\Debug\net9.0\ref\LivestockLink.Infrastructure.dll

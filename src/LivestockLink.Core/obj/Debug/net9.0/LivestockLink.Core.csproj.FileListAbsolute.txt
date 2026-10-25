@@ -1,0 +1,11 @@
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\bin\Debug\net9.0\LivestockLink.Core.deps.json
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\bin\Debug\net9.0\LivestockLink.Core.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\bin\Debug\net9.0\LivestockLink.Core.pdb
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.AssemblyInfoInputs.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.AssemblyInfo.cs
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.csproj.CoreCompileInputs.cache
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\refint\LivestockLink.Core.dll
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\LivestockLink.Core.pdb
+C:\Users\GHAZAL BASHIRUDEEN O\Music\B\src\LivestockLink.Core\obj\Debug\net9.0\ref\LivestockLink.Core.dll

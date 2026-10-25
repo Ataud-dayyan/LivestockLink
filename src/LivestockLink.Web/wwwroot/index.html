@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LivestockLink Nigeria — B2B Livestock & Animal Protein Supply Brokerage</title>
+  <!-- Security: referrer policy enforced at meta level as defence-in-depth -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Inter font self-hosted in /fonts/ — no external CDN dependency -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/index.html" class="brand-logo">
+        <div class="logo-icon">LL</div>
+        <span>LivestockLink</span>
+        <span class="brand-badge">MVP Demo</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#demo-access" class="nav-link">Demo Accounts</a>
+        <a href="#model" class="nav-link">Business Model</a>
+        <a href="/swagger" target="_blank" class="nav-link">API Docs</a>
+        <button class="btn btn-secondary btn-sm" onclick="openAuthModal('login')">Log In</button>
+        <button class="btn btn-primary btn-sm" onclick="openAuthModal('register')">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-tag">Nigerian B2B Agri-Protein Marketplace</div>
+      <h1>Direct Farm-to-Kitchen Livestock Brokerage for Nigerian Restaurants</h1>
+      <p>
+        Connecting commercial eateries, hotel banquets, and caterers directly with reliable poultry farms, catfish hatcheries, and meat processors across Nigeria — with zero inventory risk.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" onclick="quickLogin('restaurant')">
+          Explore as Restaurant Buyer
+        </button>
+        <button class="btn btn-secondary btn-lg" onclick="quickLogin('supplier')">
+          Supplier Portal Demo
+        </button>
+        <button class="btn btn-outline-primary btn-lg" onclick="quickLogin('admin')">
+          Admin & Commission Dashboard
+        </button>
+      </div>
+
+      <!-- Quick Demo Launcher -->
+      <div class="demo-bar" id="demo-access">
+        <div class="demo-bar-title">⚡ Instant 1-Click Demonstration Logins</div>
+        <div class="demo-buttons">
+          <button class="btn btn-sm btn-primary" onclick="quickLogin('restaurant')">
+            🛒 Restaurant: Mama Cass Eateries (Lagos)
+          </button>
+          <button class="btn btn-sm btn-primary" onclick="quickLogin('restaurant2')">
+            🛒 Restaurant: Calabar Kitchen (Abuja)
+          </button>
+          <button class="btn btn-sm btn-secondary" onclick="quickLogin('supplier')">
+            🐔 Supplier: Al-Barakah Poultry (Ibadan)
+          </button>
+          <button class="btn btn-sm btn-secondary" onclick="quickLogin('supplier2')">
+            🐟 Supplier: Niger Valley Catfish (Asaba)
+          </button>
+          <button class="btn btn-sm btn-danger" onclick="quickLogin('admin')">
+            🛡️ Platform Owner / Admin
+          </button>
+        </div>
+        <p style="font-size: 0.75rem; color: #854d0e; margin-top: 0.5rem;">
+          Default password for all seeded demo accounts: <strong>Password123!</strong> | Data is pre-seeded for demonstration.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Value Proposition Section -->
+  <section class="section" id="model">
+    <div class="section-header">
+      <h2>The Brokerage Advantage</h2>
+      <p>A lean, asset-light model solving supply chain fragmentation in Nigeria's fast-growing food service industry.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🍽️</div>
+        <h3>For Restaurant Buyers</h3>
+        <p>Eliminate middleman markups and unreliable market runs. Source live broilers, processed beef, and live aerated catfish at transparent wholesale prices with scheduled kitchen delivery.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🚜</div>
+        <h3>For Livestock Farmers</h3>
+        <p>Secure recurring, predictable bulk purchase orders from verified restaurants. Focus on livestock rearing and harvest while LivestockLink handles matchmaking and order dispatch tracking.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💼</div>
+        <h3>For Platform Owners</h3>
+        <p>Earn an automated commission (default 5%) on completed deliveries without purchasing feed, owning land, holding livestock inventory, or operating cold storage facilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Flow -->
+  <section class="section" id="how-it-works" style="background-color: var(--white); border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200);">
+    <div class="section-header">
+      <h2>End-to-End Order Workflow</h2>
+      <p>How an order moves from restaurant request to delivery confirmation and automated commission accounting.</p>
+    </div>
+
+    <div class="workflow-step-container">
+      <div class="workflow-step">
+        <div class="workflow-num">1</div>
+        <h4>Order Submission</h4>
+        <p>Restaurant browses wholesale listings, specifies quantity, delivery date, and address, then submits an order request.</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">2</div>
+        <h4>Supplier Review</h4>
+        <p>Farmer reviews the order specs, inventory availability, and accepts or rejects the incoming request with notes.</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">3</div>
+        <h4>Dispatch & Logistics</h4>
+        <p>Supplier marks order as dispatched, attaching transit details (driver contact, vehicle plate, cold-chain status).</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">4</div>
+        <h4>Delivery Confirmation</h4>
+        <p>Restaurant kitchen inspects goods upon arrival and confirms receipt, or files a dispute if specifications do not match.</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="workflow-num">5</div>
+        <h4>Commission Calculation</h4>
+        <p>System automatically calculates the platform's brokerage fee and records net supplier payout in Nigerian Naira (₦).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demonstration Data Summary Table -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Pre-Seeded Demonstration Accounts</h2>
+      <p>Ready-to-use testing credentials configured with realistic Nigerian market listings and transactions.</p>
+    </div>
+
+    <div class="table-card">
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Account Name</th>
+              <th>Demo Email</th>
+              <th>Location</th>
+              <th>Key Focus / Catalog</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-accepted">Restaurant Buyer</span></td>
+              <td>Mama Cass Eateries & Banquets</td>
+              <td><code>mamacass@livestocklink.ng</code></td>
+              <td>Ikeja, Lagos State</td>
+              <td>Weekly bulk broiler & beef buyer</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-accepted">Restaurant Buyer</span></td>
+              <td>Calabar Heritage Grills & Lounge</td>
+              <td><code>calabarkitchen@livestocklink.ng</code></td>
+              <td>Wuse 2, Abuja FCT</td>
+              <td>Live table-size catfish & ram cuts</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-dispatched">Livestock Supplier</span></td>
+              <td>Al-Barakah Poultry & Agro Farms</td>
+              <td><code>albarakah@livestocklink.ng</code></td>
+              <td>Moniya, Ibadan, Oyo State</td>
+              <td>Live broilers, blast-frozen chicken, chicks</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-dispatched">Aquaculture Supplier</span></td>
+              <td>Niger Valley Aquaculture & Smokehouse</td>
+              <td><code>nigervalley@livestocklink.ng</code></td>
+              <td>Asaba, Delta State</td>
+              <td>Live aerated table catfish & smoked fish</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-dispatched">Livestock Supplier</span></td>
+              <td>Plateau Prime Beef & Ram Processors</td>
+              <td><code>plateauprime@livestocklink.ng</code></td>
+              <td>Bukuru, Jos, Plateau State</td>
+              <td>Fulani beef cuts, Red Sokoto goats</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-completed">Platform Admin</span></td>
+              <td>Platform Administrator</td>
+              <td><code>admin@livestocklink.ng</code></td>
+              <td>Headquarters</td>
+              <td>Commission rules, dispute resolution, GMV</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Auth Modal (Login / Register) -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="auth-modal-title">Sign In to LivestockLink</h3>
+        <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+      </div>
+
+      <!-- Auth Tabs -->
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--slate-200); padding-bottom: 0.5rem;">
+        <button id="tab-login" class="btn btn-sm btn-primary" onclick="switchAuthTab('login')">Log In</button>
+        <button id="tab-register" class="btn btn-sm btn-secondary" onclick="switchAuthTab('register')">Register New Account</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="form-login" onsubmit="handleLoginSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" id="login-email" class="form-control" placeholder="e.g. mamacass@livestocklink.ng" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+          <div class="form-text">For seeded accounts, use: <code>Password123!</code></div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="form-register" style="display: none;" onsubmit="handleRegisterSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Account Role</label>
+          <select id="reg-role" class="form-control" onchange="toggleRoleFields()" required>
+            <option value="Restaurant">Restaurant / Buyer</option>
+            <option value="Supplier">Livestock / Fish Supplier</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-col form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" id="reg-fullname" class="form-control" placeholder="e.g. Tunde Adeyemi" required>
+          </div>
+          <div class="form-col form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" id="reg-phone" class="form-control" placeholder="e.g. +2348031234567" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-col form-group">
+            <label class="form-label">Email</label>
+            <input type="email" id="reg-email" class="form-control" placeholder="name@business.ng" required>
+          </div>
+          <div class="form-col form-group">
+            <label class="form-label">Password</label>
+            <input type="password" id="reg-password" class="form-control" placeholder="Min. 6 characters" required>
+          </div>
+        </div>
+
+        <!-- Restaurant Specific Fields -->
+        <div id="restaurant-fields">
+          <div class="form-group">
+            <label class="form-label">Restaurant / Business Name</label>
+            <input type="text" id="reg-rest-name" class="form-control" placeholder="e.g. Victoria Island Grill">
+          </div>
+          <div class="form-row">
+            <div class="form-col form-group">
+              <label class="form-label">City</label>
+              <input type="text" id="reg-rest-city" class="form-control" placeholder="e.g. Lagos">
+            </div>
+            <div class="form-col form-group">
+              <label class="form-label">State</label>
+              <input type="text" id="reg-rest-state" class="form-control" placeholder="e.g. Lagos State">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Delivery Address</label>
+            <input type="text" id="reg-rest-address" class="form-control" placeholder="Kitchen delivery street address">
+          </div>
+        </div>
+
+        <!-- Supplier Specific Fields -->
+        <div id="supplier-fields" style="display: none;">
+          <div class="form-group">
+            <label class="form-label">Farm / Farm Enterprise Name</label>
+            <input type="text" id="reg-supp-name" class="form-control" placeholder="e.g. Golden Crest Poultry">
+          </div>
+          <div class="form-row">
+            <div class="form-col form-group">
+              <label class="form-label">Farm Location</label>
+              <input type="text" id="reg-supp-location" class="form-control" placeholder="e.g. Epe Agricultural Corridor">
+            </div>
+            <div class="form-col form-group">
+              <label class="form-label">State</label>
+              <input type="text" id="reg-supp-state" class="form-control" placeholder="e.g. Lagos State">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Delivery Coverage</label>
+            <input type="text" id="reg-supp-coverage" class="form-control" placeholder="e.g. Lagos Mainland, Lagos Island, Ogun">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="/js/api.js"></script>
+  <script>
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.innerHTML = message;
+      container.appendChild(toast);
+      setTimeout(() => toast.remove(), 4000);
+    }
+
+    function openAuthModal(tab = 'login') {
+      document.getElementById('auth-modal').classList.add('active');
+      switchAuthTab(tab);
+    }
+
+    function closeAuthModal() {
+      document.getElementById('auth-modal').classList.remove('active');
+    }
+
+    function switchAuthTab(tab) {
+      const isLogin = tab === 'login';
+      document.getElementById('tab-login').className = isLogin ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-secondary';
+      document.getElementById('tab-register').className = !isLogin ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-secondary';
+      document.getElementById('form-login').style.display = isLogin ? 'block' : 'none';
+      document.getElementById('form-register').style.display = !isLogin ? 'block' : 'none';
+      document.getElementById('auth-modal-title').innerText = isLogin ? 'Sign In to LivestockLink' : 'Register for LivestockLink';
+    }
+
+    function toggleRoleFields() {
+      const role = document.getElementById('reg-role').value;
+      const isRest = role === 'Restaurant';
+      document.getElementById('restaurant-fields').style.display = isRest ? 'block' : 'none';
+      document.getElementById('supplier-fields').style.display = !isRest ? 'block' : 'none';
+    }
+
+    async function handleLoginSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+
+      try {
+        const res = await API.post('/api/auth/login', { email, password });
+        API.setToken(res.token);
+        API.setCurrentUser(res.user);
+        showToast('Login successful! Redirecting to portal...', 'success');
+        setTimeout(() => window.location.href = '/app.html', 800);
+      } catch (err) {
+        showToast(err.message, 'error');
+      }
+    }
+
+    async function handleRegisterSubmit(e) {
+      e.preventDefault();
+      const role = document.getElementById('reg-role').value;
+      const payload = {
+        fullName: document.getElementById('reg-fullname').value,
+        phone: document.getElementById('reg-phone').value,
+        phoneNumber: document.getElementById('reg-phone').value,
+        email: document.getElementById('reg-email').value,
+        password: document.getElementById('reg-password').value,
+        role: role,
+        restaurantName: document.getElementById('reg-rest-name')?.value,
+        city: document.getElementById('reg-rest-city')?.value,
+        state: document.getElementById('reg-rest-state')?.value,
+        businessAddress: document.getElementById('reg-rest-address')?.value,
+        supplierBusinessName: document.getElementById('reg-supp-name')?.value,
+        farmLocation: document.getElementById('reg-supp-location')?.value,
+        deliveryCoverage: document.getElementById('reg-supp-coverage')?.value
+      };
+
+      try {
+        const res = await API.post('/api/auth/register', payload);
+        API.setToken(res.token);
+        API.setCurrentUser(res.user);
+        showToast('Registration successful! Redirecting...', 'success');
+        setTimeout(() => window.location.href = '/app.html', 800);
+      } catch (err) {
+        showToast(err.message, 'error');
+      }
+    }
+
+    // Quick demo logins for seamless presentation
+    async function quickLogin(roleType) {
+      let email = 'mamacass@livestocklink.ng';
+      if (roleType === 'restaurant2') email = 'calabarkitchen@livestocklink.ng';
+      else if (roleType === 'supplier') email = 'albarakah@livestocklink.ng';
+      else if (roleType === 'supplier2') email = 'nigervalley@livestocklink.ng';
+      else if (roleType === 'admin') email = 'admin@livestocklink.ng';
+
+      try {
+        const res = await API.post('/api/auth/login', {
+          email: email,
+          password: 'Password123!'
+        });
+        API.setToken(res.token);
+        API.setCurrentUser(res.user);
+        showToast(`Signed in as ${res.user.fullName}. Redirecting...`, 'success');
+        setTimeout(() => window.location.href = '/app.html', 600);
+      } catch (err) {
+        showToast(`Demo login error: ${err.message}`, 'error');
+      }
+    }
+
+    // Auto-check if already logged in
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = API.getCurrentUser();
+      if (user && API.getToken()) {
+        const navLinks = document.querySelector('.nav-links');
+        const userBtn = document.createElement('a');
+        userBtn.href = '/app.html';
+        userBtn.className = 'btn btn-primary btn-sm';
+        userBtn.innerText = `Go to Dashboard (${user.role})`;
+        navLinks.appendChild(userBtn);
+      }
+    });
+  </script>
+</body>
+</html>
